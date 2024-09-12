@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 const HomePage = () => {
   const input = useState<string>(" ")[0];
@@ -11,6 +12,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <ThemeSwitch />
       <input
         value={input}
         type="text"
