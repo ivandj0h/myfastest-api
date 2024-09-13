@@ -1,14 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemeSwitch from "./components/ThemeSwitch";
 
 const HomePage = () => {
-  const input = useState<string>(" ")[0];
-  const [] = useState<{
+  const [input, setInput] = useState<string>(" ");
+  const [searchResults, setSearchResults] = useState<{
     result: string[];
     duration: number;
   }>();
+
+  useEffect(() => {
+    const fetchResults = async () => {
+      if (!input) return setSearchResults(undefined);
+      const response = await fetch(`/api/search?q=${input}`);
+      const data = await response.json();
+      console.log(data);
+    };
+    fetchResults();
+  }, [input]);
 
   return (
     <div>
@@ -16,7 +26,7 @@ const HomePage = () => {
       <input
         value={input}
         type="text"
-        onChange={() => console.log("Hello World from Console...")}
+        onChange={(e) => setInput(e.target.value)}
       />
     </div>
   );
