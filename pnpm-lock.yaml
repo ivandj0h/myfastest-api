@@ -12,8 +12,8 @@ importers:
         specifier: ^1.34.0
         version: 1.34.0
       hono:
-        specifier: ^4.10.3
-        version: 4.10.3
+        specifier: ^4.11.7
+        version: 4.11.7
       next:
         specifier: 16.1.5
         version: 16.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1124,8 +1124,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.10.3:
-    resolution: {integrity: sha512-2LOYWUbnhdxdL8MNbNg9XZig6k+cZXm5IjHn2Aviv7honhBMOHb+jxrKIeJRZJRmn+htUCKhaicxwXuUDlchRA==}
+  hono@4.11.7:
+    resolution: {integrity: sha512-l7qMiNee7t82bH3SeyUCt9UF15EVmaBvsppY2zQtrbIhl/yzBTny+YUxsVjSjQ6gaqaeVtZmGocom8TzBlA4Yw==}
     engines: {node: '>=16.9.0'}
 
   http-errors@2.0.1:
@@ -3299,7 +3299,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.10.3: {}
+  hono@4.11.7: {}
 
   http-errors@2.0.1:
     dependencies:
